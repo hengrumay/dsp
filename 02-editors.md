@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Most likely emacs -- as it has some really strong features (https://www.gnu.org/software/emacs/index.html#features | https://www.gnu.org/software/emacs/tour/index.html) and can be integrated with other languages too. Vim seems to be text-based. 
 
 --
 
@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
 
+>> I have tried Sublime for web-related exploration. I have also tried Spyder and Jupyter. I am thinking of trying Rodeo as it seems similar to R and Matlab IDEs that I've used.
  
