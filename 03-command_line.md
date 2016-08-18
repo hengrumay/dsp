@@ -15,6 +15,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 
+> > REf http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
 
 ---
 
