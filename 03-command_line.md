@@ -14,8 +14,8 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
-
-> > REf http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+To DO
+> > ref http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
 
 ---
 
@@ -67,6 +67,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
+To DO
+> > ref https://en.wikipedia.org/wiki/Xargs | http://www.thegeekstuff.com/2013/12/xargs-examples 
 
