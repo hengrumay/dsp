@@ -15,6 +15,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 
+
 ---
 
 ###Q2.  List Files in Unix   
@@ -50,7 +51,13 @@ Helpful References:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+-c	 : Displays files by file timestamp.  
+-d	 :	Displays only directories.  
+-F	 :	Flags filenames.  
+-m	 :	Displays the names as a comma-separated list.  
+-t	 :	Displays newest files first. (based on timestamp)  
+-1	 :	Displays each entry on a line.  
 
 ---
 
