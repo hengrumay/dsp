@@ -29,7 +29,7 @@ What do the following commands do:
 `ls -Glp`  	
 
 > > 
-`ls`		: lists all files in the directory that match the name. If name is left blank, it will list all of the files in the directory
+`ls`		: lists all files in the directory that match the name. If name is left blank, it will list all of the files in the directory  
 `ls -a`		: lists all files in current folder including '.'  
 `ls -l`		: shows the long format listing of files in current folder  
 `ls -lh`	: use human readable format for sizes in the long format listing of current folder  
