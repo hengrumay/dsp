@@ -69,5 +69,5 @@ What terminal editor will you use? How did you make your decision?
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 
->> I have tried Sublime for web-related exploration. I have also tried Spyder and Jupyter. Rodeo seems similar to R and Matlab IDEs that I've used. Some useful shortcuts are cmd+enter & tab for autocompletion (more here: http://rodeo.yhat.com/docs/). However, I might end up using Spyder at times, too. I haven't decided!
+>> I have tried Sublime for web-related exploration. I have also tried Spyder and Jupyter. Rodeo seems similar to R and Matlab IDEs that I've used. Some useful shortcuts are cmd+enter & tab for autocompletion (more here: http://rodeo.yhat.com/docs/). However, I might end up using Spyder, too. I haven't decided!
  
