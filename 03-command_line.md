@@ -14,17 +14,17 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > 
-- pushd     : "pushes" the current directory into a list for later, then it changes to the directory specified.  
-- popd      : "pops" off the last directory you are at and returns you back to the directory from which you last "pushd".  
-- mkdir -p  : makes an entire path even if all the directories do not exist (yet).  
-- CTRL Y    : Paste  
-- cp -R [stuff] [otherStuff]    : copy (from) and rename a folder  
-- cp *.txt stuff/   : copy all of *[file type] to folder  
-- rm -i [file] ..   : ask for confirmation each file  
-- rm -f [fileName]      : force deletion of a file  
-- touch [fileName]      : create or update a file  
-- find -name “*text”    : search for files that ends with the word text  
-- grep -r [text] [folderName]/    : search for file names with occurrence of the text  
+- **pushd**     : "pushes" the current directory into a list for later, then it changes to the directory specified.  
+- **popd**      : "pops" off the last directory you are at and returns you back to the directory from which you last "pushd".  
+- **mkdir -p**  : makes an entire path even if all the directories do not exist (yet).  
+- **CTRL Y**    : Paste  
+- **cp -R [stuff] [otherStuff]**    : copy (from) and rename a folder  
+- **cp *.txt stuff/**   : copy all of *[file type] to folder  
+- **rm -i [file] ..**   : ask for confirmation each file  
+- **rm -f [fileName]**      : force deletion of a file  
+- **touch [fileName]**      : create or update a file  
+- **find -name “*text”**    : search for files that ends with the word text  
+- **grep -r [text] [folderName]/**    : search for file names with occurrence of the text  
   
 > > ref http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
 
