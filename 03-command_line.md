@@ -13,7 +13,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > 
+> >   
+  
 - **pushd**     : "pushes" the current directory into a list for later, then it changes to the directory specified.  
 - **popd**      : "pops" off the last directory you are at and returns you back to the directory from which you last "pushd".  
 - **mkdir -p**  : makes an entire path even if all the directories do not exist (yet).  
@@ -63,7 +64,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > 
+> >   
 -c	 : Displays files by file timestamp.  
 -d	 :	Displays only directories.  
 -F	 :	Flags filenames.  
