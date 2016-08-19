@@ -18,6 +18,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 - **popd**      : "pops" off the last directory you are at and returns you back to the directory from which you last "pushd".  
 - **mkdir -p**  : makes an entire path even if all the directories do not exist (yet).  
 - **CTRL Y**    : Paste  
+- **CTRL C**         : Stop current cmd.
 - **cp -R [stuff] [otherStuff]**    : copy (from) and rename a folder  
 - **cp *.txt stuff/**   : copy all of *[file type] to folder  
 - **rm -i [file] ..**   : ask for confirmation each file  
