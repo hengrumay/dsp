@@ -77,12 +77,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > **xargs** is a command that helps to build and execute command lines from *standard input*. It is commonly used together with **find** and **grep** where it facilitates the division of a huge list of arguments into a smaller list to allow these smaller argument chunks to be executed.  
+> > **xargs** is a command that helps to build and execute command lines from *standard input*. It is commonly used together with **find** and **grep** where it facilitates the division of a huge list of arguments (typically associated with **find** & **grep**) into smaller parse-friendly lengths (sub-lists) and allow these smaller argument chunks to be executed.  
 
 
 > > TO DO ADD example...
 
 > > Helpful Refs:   
+- http://www.unixmantra.com/2013/12/xargs-all-in-one-tutorial-guide.html  
 - http://javarevisited.blogspot.com/2012/06/10-xargs-command-example-in-linux-unix.html#ixzz4HoWeZhV1  
 - https://en.wikipedia.org/wiki/Xargs | http://www.thegeekstuff.com/2013/12/xargs-examples   
 - http://www.computerhope.com/unix/xargs.htm  
