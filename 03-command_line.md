@@ -27,7 +27,9 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 - **find -name “*text”**    : search for files that ends with the word text  
 - **grep -r [text] [folderName]/**    : search for file names with occurrence of the text  
   
-> > ref http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+> > ref   
+- http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+- http://www.cyberciti.biz/faq/linux-unix-appleosx-bsd-cat-command-examples/  
 
 ---
 
