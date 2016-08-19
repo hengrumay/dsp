@@ -14,7 +14,6 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > >   
-  
 - **pushd**     : "pushes" the current directory into a list for later, then it changes to the directory specified.  
 - **popd**      : "pops" off the last directory you are at and returns you back to the directory from which you last "pushd".  
 - **mkdir -p**  : makes an entire path even if all the directories do not exist (yet).  
@@ -78,7 +77,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE  
-To DO
-> > ref https://en.wikipedia.org/wiki/Xargs | http://www.thegeekstuff.com/2013/12/xargs-examples 
+> > **xargs** command is a spiffy command used in conjunction with **find** and **grep** command in UNIX to divide a big list of arguments into small list received from *standard input*.  
+  
+> > TO DO ADD example...
+
+> > Helpful Refs:   
+- http://javarevisited.blogspot.com/2012/06/10-xargs-command-example-in-linux-unix.html#ixzz4HoWeZhV1  
+- https://en.wikipedia.org/wiki/Xargs | http://www.thegeekstuff.com/2013/12/xargs-examples   
+- http://www.computerhope.com/unix/xargs.htm  
+- http://www.thegeekstuff.com/2013/12/xargs-examples  
 
