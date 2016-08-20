@@ -27,7 +27,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 - **find -name “*text”**    : search for files that ends with the word text  
 - **grep -r [text] [folderName]/**    : search for file names with occurrence of the text  
   
-> > ref   
+> >   
+####Helpful References:  
 - http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
 - http://www.cyberciti.biz/faq/linux-unix-appleosx-bsd-cat-command-examples/  
 
@@ -90,7 +91,8 @@ temp//ex15.txt
 $ find -X temp/ -name "*.txt" | xargs rm   
 
 
-> > Helpful Refs:   
+> >   
+####Helpful References:   
 - http://www.unixmantra.com/2013/12/xargs-all-in-one-tutorial-guide.html  
 - http://javarevisited.blogspot.com/2012/06/10-xargs-command-example-in-linux-unix.html#ixzz4HoWeZhV1  
 - https://en.wikipedia.org/wiki/Xargs | http://www.thegeekstuff.com/2013/12/xargs-examples   
