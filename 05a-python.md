@@ -15,8 +15,8 @@ How are Python lists and tuples similar and different? Which will work as keys i
 >>   
 - List and Tuples are similar in that they are an (ordered) array of items (integers, strings etc.) and these items are indexed starting from 0.   
 - They differ in that the items in Tuples, enclosed within "()", are 'immutable' i.e. non-changeable whereas the items enclosed within "[]" in a List are mutable. Tuples are considered 'faster' to manipulate because of their immutability.     
-- Tuples are also comparable and hashable, which allow one to sort items in tuples and use as key values in dictionaries.  
-- Hash methods in dictionaries require unique mappings. Given the mutability of lists, they are not considered to provide a valid hash_method and can lead to key-pairing errors.  
+- Tuples are also comparable and hashable, which allow one to sort items in tuples and use tuples as key values in dictionaries.  
+- Hash methods in dictionaries require unique mappings between keys and their corresponding values. Given the mutability of lists, they are not considered to provide a valid hash_method and can lead to key-pairing errors.  
 
 >> Some useful references :   
   - http://sthurlow.com/python/lesson06/  
@@ -32,8 +32,17 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> REPLACE THIS TEXT WITH YOUR RESPONSE  
+- Order is kept in Lists but not in (Dictionaries and) Sets. -- if order is required, use Lists.  
+- Sets require items to be hashable ##, list doesn't: ###### if you have non-hashable items, therefore, you cannot use set and must instead use list.
 
+##### set forbids duplicates, list does not: also a crucial distinction. (A "multiset", which maps duplicates into a different count for items present more than once, can be found in collections.Counter -- you could build one as a dict, if for some weird reason you couldn't import collections, or, in pre-2.7 Python as a collections.defaultdict(int), using the items as keys and the associated value as the count).
+
+##### Checking for membership of a value in a set (or dict, for keys) is blazingly fast (taking about a constant, short time), while in a list it takes time proportional to the list's length in the average and worst cases. So, if you have hashable items, don't care either way about order or duplicates, and want speedy membership checking, set is better than list.
+
+>> Some useful references :   
+  - http://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set  
+  - http://www.thomas-cokelaer.info/tutorials/python/sets.html
 
 ---
 
