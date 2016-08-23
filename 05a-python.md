@@ -18,7 +18,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 - Tuples are also comparable and hashable, which allow lists of tuples to be sorted and used as key values in dictionaries.  
 - Hash methods in dictionaries require unique mappings. Given the mutability of lists, they are not considered to provide a valid hash_method and can lead to key-pairing errors.  
 
-ref http://sthurlow.com/python/lesson06/  
+>> ref http://sthurlow.com/python/lesson06/  
 ref http://www.thomas-cokelaer.info/tutorials/python/data_structures.html  
 ref https://wiki.python.org/moin/DictionaryKeys  
 ref http://www.pythonlearn.com/html-008/cfbook011.html
