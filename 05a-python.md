@@ -18,7 +18,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 - Tuples are also comparable and hashable**, which allow one to use tuples as key values in dictionaries.  
 - Hash methods in dictionaries require unique mappings between keys and their corresponding values. Given the mutability of lists, they are not considered to provide a valid hash_method and can lead to key-pairing errors.  
 
-> > **An object is hashable if it has an associative hash value (i.e. a __hash__() method) that never changes during its lifetime and it can be compared to other objects (i.e. it has an __eq__() method). Hashable objects which compare equal must have the same hash value.  
+> > **An object is hashable if it has an associative hash value (i.e. a __hash__() method) that does not change and it can be compared to other objects (i.e. it has an __eq__() method). Hashable objects which compare equal must have the same hash value.  
 
 > >Some useful references :   
   - http://sthurlow.com/python/lesson06/  
@@ -146,7 +146,39 @@ True
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> >   Anonymous functions can be created with the lambda keyword. Lambda functions are single expressions which can be used wherever function objects are required. Similar to nested function definitions, lambda functions can reference variables from the containing environment. Unlike regular functions, lamda does not require using the "return" statement; it always return the outcome of its corresponding expression.
+
+```
+>>> def add2number (n): return lambda x: x + n
+>>> 
+>>> f = add2number(2)
+>>> g = add2number(6)
+>>> 
+>>> print f(42), g(42)
+44 48
+>>> 
+>>> print add2number(22)(33)
+55
+
+
+>>> colors = ["blue", "lavender", "red", "yellow"]
+# Sort colors by length, in reverse (descending) order.
+>>> for color in sorted(colors, key=lambda color: len(color), reverse=True):
+>>>     print(color)
+
+lavender
+yellow
+blue
+red
+
+```
+
+
+> >  
+ref http://www.secnetix.de/olli/Python/lambda_functions.hawk  
+ref https://docs.python.org/3/tutorial/controlflow.html  
+ref http://www.python-course.eu/lambda.php
+ref http://www.dotnetperls.com/sort-python
 
 ---
 
@@ -154,7 +186,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ref http://www.python-course.eu/lambda.php  
+
 
 ---
 
