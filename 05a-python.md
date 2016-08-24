@@ -171,14 +171,18 @@ yellow
 blue
 red
 
+>>> sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
+['differently', 'Some', 'sort', 'words']
+
 ```
 
 
 > >  
 ref http://www.secnetix.de/olli/Python/lambda_functions.hawk  
 ref https://docs.python.org/3/tutorial/controlflow.html  
-ref http://www.python-course.eu/lambda.php
-ref http://www.dotnetperls.com/sort-python
+ref http://www.python-course.eu/lambda.php  
+ref http://www.dotnetperls.com/sort-python  
+ref https://wiki.python.org/moin/HowTo/Sorting
 
 ---
 
@@ -188,6 +192,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 ref http://www.python-course.eu/lambda.php  
+ref 
 
 
 ---
