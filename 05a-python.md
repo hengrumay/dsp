@@ -190,7 +190,18 @@ ref https://wiki.python.org/moin/HowTo/Sorting
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE  
+> > #### List Comprehensions  
+- list comprehension ---   
+- map  
+- filter  
+
+
+> > #### Set Comprehensions  
+
+> > #### Dictionary Comprehensions  
+
+
+> >   
 ref http://www.python-course.eu/lambda.php  
 ref http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/  
 ref 
