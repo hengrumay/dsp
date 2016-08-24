@@ -12,18 +12,21 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->>   
+> >   
 - List and Tuples are similar in that they are an (ordered) array of items (integers, strings etc.) and these items are indexed starting from 0.   
 - They differ in that the items in Tuples, enclosed within "()", are 'immutable' i.e. non-changeable whereas the items enclosed within "[]" in a List are mutable. Tuples are considered 'faster' to manipulate because of their immutability.     
-- Tuples are also comparable and hashable, which allow one to sort items in tuples and use tuples as key values in dictionaries.  
+- Tuples are also comparable and hashable**, which allow one to use tuples as key values in dictionaries.  
 - Hash methods in dictionaries require unique mappings between keys and their corresponding values. Given the mutability of lists, they are not considered to provide a valid hash_method and can lead to key-pairing errors.  
 
->> Some useful references :   
+> > **An object is hashable if it has an associative hash value (i.e. a __hash__() method) that never changes during its lifetime and it can be compared to other objects (i.e. it has an __eq__() method). Hashable objects which compare equal must have the same hash value.  
+
+> >Some useful references :   
   - http://sthurlow.com/python/lesson06/  
   - http://www.thomas-cokelaer.info/tutorials/python/data_structures.html  
   - https://wiki.python.org/moin/DictionaryKeys  
   - http://www.pythonlearn.com/html-008/cfbook011.html  
-  - http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/  
+  - http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/
+  - https://docs.python.org/3/glossary.html
 
 
 ---
@@ -32,17 +35,50 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
-- Order is kept in Lists but not in (Dictionaries and) Sets. If order is required, use Lists.  
-- Sets require items to be hashable, lists do not. For non-hashable items, use List(s).
--  
-##### set forbids duplicates, list does not: also a crucial distinction. (A "multiset", which maps duplicates into a different count for items present more than once, can be found in collections.Counter -- you could build one as a dict, if for some weird reason you couldn't import collections, or, in pre-2.7 Python as a collections.defaultdict(int), using the items as keys and the associated value as the count).
+> >   
+- Order is kept in Lists but not in (Dictionaries and) Sets. If order is required, use Lists.
+- Sets require items to be hashable**, lists do not. For non-hashable items, use List(s).
+- Sets do not allow duplicates, Lists do. 
 
-##### Checking for membership of a value in a set (or dict, for keys) is blazingly fast (taking about a constant, short time), while in a list it takes time proportional to the list's length in the average and worst cases. So, if you have hashable items, don't care either way about order or duplicates, and want speedy membership checking, set is better than list.
+```
+''' Examples of Set(s)'''
+>>> a = set([1, 2, 3, 4])
+>>> b = set([3, 4, 5, 6])
 
->> Some useful references :   
+# Union:    a.union(b)
+>>> a | b 
+{1, 2, 3, 4, 5, 6}
+
+# Intersection:   a.intersection(b)
+>>> a & b 
+{3, 4}
+
+>>> c = a & b
+>>> c
+set([3, 4])
+>>> c.issuperset(a)
+False
+
+# Subset:   b.issubset(a)
+>>> a < b 
+False
+
+# Difference:   a.difference(b)
+>>> a - b 
+{1, 2}
+
+# Symmetric Difference:   a.symmetric_difference(b)
+>>> a ^ b 
+{1, 2, 5, 6}
+```
+
+- Checking for membership of a value in a set (or dict, for keys) is swift compared to finding an element in a list due to the time taken being roughly proportional to the list's length.  
+
+> > Some useful references :   
   - http://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set  
   - http://www.thomas-cokelaer.info/tutorials/python/sets.html
+> >   
+
 
 ---
 
