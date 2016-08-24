@@ -41,7 +41,7 @@ How are Python lists and sets similar and different? Give examples of using both
 - Sets do not allow duplicates, Lists do. 
 
 ```
-''' Examples of Set(s)'''
+### --- Examples of Set(s) ---
 >>> a = set([1, 2, 3, 4])
 >>> b = set([3, 4, 5, 6])
 
