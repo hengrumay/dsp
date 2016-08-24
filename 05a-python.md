@@ -34,7 +34,8 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE  
 - Order is kept in Lists but not in (Dictionaries and) Sets. -- if order is required, use Lists.  
-- Sets require items to be hashable ##, list doesn't: ###### if you have non-hashable items, therefore, you cannot use set and must instead use list.
+- Sets require items to be hashable, lists do not. For non-hashable items, use List(s).  
+- 
 
 ##### set forbids duplicates, list does not: also a crucial distinction. (A "multiset", which maps duplicates into a different count for items present more than once, can be found in collections.Counter -- you could build one as a dict, if for some weird reason you couldn't import collections, or, in pre-2.7 Python as a collections.defaultdict(int), using the items as keys and the associated value as the count).
 
