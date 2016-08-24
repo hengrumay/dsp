@@ -37,21 +37,69 @@ How are Python lists and sets similar and different? Give examples of using both
 
 > >   
 - Order is kept in Lists but not in (Dictionaries and) Sets. If order is required, use Lists.
-- Sets require items to be hashable**, lists do not. For non-hashable items, use List(s).
-- Sets do not allow duplicates, Lists do. 
+- Unlke Lists, Sets do not allow duplicates and are therefore commonly used to build sequence of unique items or identifiers.  
+
+```
+### --- Examples of List(s) ---
+>>> stack = ['a', 'b', 'c']
+
+>>> stack.append(['d', 'e', 'f'])
+>>> stack
+['a', 'b', 'c', ['d', 'e', 'f']]
+
+
+>>> stack.extend(['d', 'e','f'])
+>>> stack
+['a', 'b', 'c', 'd', 'e', 'f']
+
+>>> a_list = ['a','b','c','b', 'a']
+>>> a_list.index('b')
+1
+>>> a_list.index('b', 2)
+3
+
+>>> b_list = ['b','c','b']
+>>> b_list.insert(2, 'a')
+>>> b_list
+['b', 'c', 'a', 'b']
+
+>>> c_list = ['a','b','c','b', 'a']
+>>> c_list.remove('a')
+>>> c_list
+['b', 'c', 'b', 'a']
+
+>>> c_list.pop()
+'a'
+>>> c_list
+['b', 'c', 'b']
+
+>>> b_list.sort()
+>>> b_list
+['a', 'b', 'b', 'c']
+
+>>> b_list.sort(reverse=True)
+>>> b_list
+['c', 'b', 'b', 'a']
+
+>>> stack.reverse()   #stack = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> stack
+['f', 'e', 'd', 'c', 'b', 'a']
+
+```
 
 ```
 ### --- Examples of Set(s) ---
+
 >>> a = set([1, 2, 3, 4])
 >>> b = set([3, 4, 5, 6])
 
 # Union:    a.union(b)
 >>> a | b 
-{1, 2, 3, 4, 5, 6}
+set([1, 2, 3, 4, 5, 6])
 
 # Intersection:   a.intersection(b)
 >>> a & b 
-{3, 4}
+set([3, 4])
 
 >>> c = a & b
 >>> c
@@ -65,14 +113,26 @@ False
 
 # Difference:   a.difference(b)
 >>> a - b 
-{1, 2}
+set([1, 20])
 
 # Symmetric Difference:   a.symmetric_difference(b)
 >>> a ^ b 
-{1, 2, 5, 6}
+set([1, 2, 5, 6])
+
 ```
 
-- Checking for membership of a value in a set (or dict, for keys) is swift compared to finding an element in a list due to the time taken being roughly proportional to the list's length.  
+- Checking for membership of a value in a set (or dict, for keys) is often faster compared to finding an element in a list due to the time taken being roughly proportional to the list's length.  
+
+```
+>>> setL=set(range(1000))
+>>> setL.issuperset([888])
+True
+
+>>> listL = range(1000)
+>>> [n for n in listL if n==888 ]
+[888]
+
+```
 
 > > Some useful references :   
   - http://stackoverflow.com/questions/3489071/in-python-when-to-use-a-dictionary-list-or-set  
