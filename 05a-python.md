@@ -232,6 +232,13 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 [97.7, 98.60000000000001, 99.5, 102.2]
 >>> C = map(celsius, F)
 [36.5, 37.00000000000001, 37.5, 39.0]
+
+## USEFUL also for mapping strings in lists as integers:
+>>> column['Points']
+['87', '80', '77', '71', '66', '64', '53', '50', '50', '46', '45', '45', '44', '44', '43', '40', '40', '36', '30', '28']
+>>> list(map(int, column['Points']))
+[87, 80, 77, 71, 66, 64, 53, 50, 50, 46, 45, 45, 44, 44, 43, 40, 40, 36, 30, 28]
+
 ```
 > >  
 - Filter:   The filter() function is also often used with the lambda function. It is used in conjunction with a function and an iterable object. It returns the items of the sequence for which function(item) is true.
