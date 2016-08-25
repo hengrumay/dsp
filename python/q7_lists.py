@@ -1,3 +1,5 @@
+# h-rm_tan 25Aug2016
+
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
@@ -15,9 +17,15 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    
+    # Return all strings with match_ends
+    # return [x for x in words if (len(x)>=2 and x[0]==x[-1])] 
+    # Find Length of the returned list of match_end strings:
+    return len([x for x in words if (len(x)>=2 and x[0]==x[-1]) ] )
+    
+    
 
-
+# ref https://developers.google.com/edu/python/sorting
 def front_x(words):
     """
     Given a list of strings, return a list with the strings in sorted
@@ -32,7 +40,11 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+
+    return [ sorted([w for w in words if w[0]=='x'])   
+            + sorted([w for w in words if w[0]!='x']) ]
+    # breaking code across lines with [ ... ] but '\' works too
+            
 
 
 def sort_last(tuples):
@@ -49,8 +61,14 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
 
+    sorted(tuples, key=lambda t:t[-1])
+
+
+
+
+#** http://stackoverflow.com/questions/27349563/how-to-have-adjacent-elements-reduced-to-a-single-element
+# http://stackoverflow.com/questions/773/how-do-i-use-pythons-itertools-groupby
 
 def remove_adjacent(nums):
     """
@@ -67,8 +85,25 @@ def remove_adjacent(nums):
     [3, 2, 3]
     >>> remove_adjacent([])
     []
+    >>> remove_adjacent([3,3,1,1,2,3,3,2,1]) 
+    [3, 1, 2, 3, 2, 1]
     """
-    raise NotImplementedError
+
+    # return list(set(nums))
+    # [nums[i] for i in range(0,len(nums)-1) if nums[i]!=nums[i+1]] but this omits the last element...
+    
+    outcome = []
+    lastN = None
+    
+    for n in nums:
+        if n != lastN:
+            outcome.append(n)
+            lastN = n
+
+    return outcome
+    
+
+       
 
 
 def linear_merge(list1, list2):
@@ -85,4 +120,11 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    
+    # list1, list2 = ['aa', 'xx', 'zz'], ['bb', 'cc']
+
+    return sorted(list1+list2)
+
+
+
+
