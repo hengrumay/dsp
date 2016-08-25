@@ -35,7 +35,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-> >   ###
+> >   
 - Order is kept in Lists but not in (Dictionaries and) Sets. If order is required, use Lists.
 - Unlke Lists, Sets do not allow duplicates and are therefore commonly used to build sequence of unique items or identifiers.  
 
