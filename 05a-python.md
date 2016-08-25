@@ -146,7 +146,7 @@ True
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-> >   Anonymous functions can be created with the lambda keyword. Lambda functions are single expressions which can be used wherever function objects are required. Similar to nested function definitions, lambda functions can reference variables from the containing environment. Unlike regular functions, lamda does not require using the "return" statement; it always return the outcome of its corresponding expression.
+> >   Anonymous inline functions can be created with the lambda keyword. A function invoked by the keyword "lambda" is a single expression that is evaluated when it is called. Similar to nested function definitions, lambda functions can reference variables from the containing environment. Unlike regular functions, lamda functions do not require using the "return" statement; they always return the outcome of their expression. 
 
 ```
 >>> def add2number (n): return lambda x: x + n
@@ -188,23 +188,84 @@ ref https://wiki.python.org/moin/HowTo/Sorting
 
 ###Q4. List Comprehension, Map &amp; Filter
 
-Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
+Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.  
 
 > > #### List Comprehensions  
-- list comprehension ---   
-- map  
-- filter  
+- List comprehension:   a method for transforming one iterable list (i.e. an object capable of returning elements individually at a time) into another list. During this transformation, elements can be conditionally included in the new list and each element can also be transformed where needed.
 
+```
+>>> x = range(0,6) #[0, 1, 2, 3, 4, 5]
+
+## for-loop
+>>> doubled_x = []
+>>> for n in x:
+>>>     if n % 2 == 1:
+>>>         doubled_x.append(n * 2)
+
+## list-comprehended
+>>> doubled_x = [n * 2 for n in x if n % 2 == 1]
+>>> doubled_x
+[2, 6, 10]
+
+```
+
+- map:       A special function for cases when you need to do a specific action on every element of a list. It enables you to accomplish this without having to write the loop; much like the use of list-comprehension. It is often used with the lambda function. 
+
+```
+## map(func, seq)
+>>> result = map(lambda x: "The word %s is %s letters long" % (x, len(x)), [ 'home', 'hello'] )
+>>> print result
+['The word home is 4 letters long', 'The word hello is 5 letters long']
+
+## example with defined function and data-seq
+>>> def fahrenheit(tempC):
+    return ((float(9)/5)*tempC + 32)
+    
+>>> def celsius(tempF):
+    return (float(5)/9)*(tempF-32)
+
+>>> temp = (36.5, 37, 37.5,39)
+
+>>> F = map(fahrenheit, temp)
+[97.7, 98.60000000000001, 99.5, 102.2]
+>>> C = map(celsius, F)
+[36.5, 37.00000000000001, 37.5, 39.0]
+```
+
+- filter:   The filter() function is also often used with the lambda function. It is used in conjunction with a function and an iterable object. It returns the items of the sequence for which function(item) is true.
+
+```
+## filter(func, seq)
+## [x for x in seq if func(x)]
+>>> filter(lambda x: x%2 == 0, [0,3,6,9])
+[0, 6]
+
+```
 
 > > #### Set Comprehensions  
 
+```
+>>> newSet = {x for x in 'abracadabra' if x not in 'abc'}
+>>> newSet
+set(['r', 'd'])
+
+```
+
 > > #### Dictionary Comprehensions  
 
+```
+>>> {x: x**2 for x in (2, 4, 6)}
+{2: 4, 4: 16, 6: 36}
 
-> >   
-ref http://www.python-course.eu/lambda.php  
-ref http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/  
-ref 
+```
+
+> > Useful Refs:     
+- https://docs.python.org/3/tutorial/datastructures.html#tut-listcomps  
+- http://www.python-course.eu/lambda.php  
+- http://www.python-course.eu/list_comprehension.php  
+- http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/
+- http://www.thomas-cokelaer.info/tutorials/python/basics.html  
+
 
 
 
