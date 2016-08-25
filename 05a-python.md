@@ -150,7 +150,8 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 > >   Anonymous inline functions can be created with the lambda keyword. A function invoked by the keyword "lambda" is a single expression that is evaluated when it is called. Similar to nested function definitions, lambda functions can reference variables from the containing environment. Unlike regular functions, lamda functions do not require using the "return" statement; they always return the outcome of their expression. 
 
 ```
->>> def add2number (n): return lambda x: x + n
+>>> def add2number(n): 
+>>>     return lambda x: x + n
 >>> 
 >>> f = add2number(2)
 >>> g = add2number(6)
