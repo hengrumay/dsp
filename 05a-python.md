@@ -120,7 +120,7 @@ set([1, 20])
 set([1, 2, 5, 6])
 
 ```
-
+> >  
 - Checking for membership of a value in a set (or dict, for keys) is often faster compared to finding an element in a list due to the time taken being roughly proportional to the list's length.  
 
 ```
