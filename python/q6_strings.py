@@ -1,3 +1,5 @@
+# h-rm_tan 25aug2016
+
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
@@ -18,7 +20,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    
+    if count>=10:
+        return 'Number of donuts: many'
+    else: #if count<10:
+        return 'Number of donuts: ' + str(count)
+
 
 
 def both_ends(s):
@@ -37,7 +44,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    
+    if len(s)>2:
+        return s[:2]+s[-1] #s[len(s)-1]
+    else:
+        return ""
+
 
 
 def fix_start(s):
@@ -56,7 +68,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    
+    # s.count(s[0],1,len(s)) ## find index of repetition? 
+    #s.replace(old, new [,max]) ## Replaces all occurrences of old in string with new or at most max occurrences if max given.
+    
+    Rs = s[0]
+    for i in s[1:]:
+        Rs += i.replace(s[0],'*') 
+    return Rs
+
+    
 
 
 def mix_up(a, b):
@@ -74,7 +95,13 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    
+    #a,b = ('mix', 'pod')
+    a1 = b[0] + a[1:]
+    b1 = a[0] + b[1:]
+    return a1 + ' ' + b1
+
+
 
 
 def verbing(s):
@@ -91,7 +118,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+
+    if len(s) >= 3:
+        if s.count('ing'):   #if TRUE  ||  #if s[-3:] == 'ing':
+            return s + 'ly' 
+        else:                
+            return s + 'ing'
+    else:
+        return s
+            
+            
 
 
 def not_bad(s):
@@ -111,8 +147,20 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    
+    not_id = s.find('not')
+    bad_id = s.find('bad')
+    
+    if bad_id > not_id:
+        #return s[:not_id] + 'good'
+        return s.replace(s[not_id:bad_id+len('bad')],'good')
+    else:
+        return s
+    
 
+
+
+import math
 
 def front_back(a, b):
     """
@@ -130,4 +178,22 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    
+    def divStr(s):
+        if len(s)%2 ==0:
+            s1,s2 = s[:int(len(s)/2)],s[int(len(s)/2):]
+        else:
+            s1,s2 = s[:math.ceil(len(s)/2)],s[math.ceil(len(s)/2):]
+        return s1, s2
+    
+    
+    a1,a2 = divStr(a)
+    b1,b2 = divStr(b)
+    
+    return a1+b1+a2+b2
+    
+    
+    
+    
+    
+    
