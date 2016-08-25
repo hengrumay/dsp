@@ -208,8 +208,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 [2, 6, 10]
 
 ```
-
-> > #### map:       A special function for cases when you need to do a specific action on every element of a list. It enables you to accomplish this without having to write the loop; much like the use of list-comprehension. It is often used with the lambda function. 
+> >  
+- Map:       A special function for cases when you need to do a specific action on every element of a list. It enables you to accomplish this without having to write the loop; much like the use of list-comprehension. It is often used with the lambda function. 
 
 ```
 ## map(func, seq)
@@ -231,8 +231,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >>> C = map(celsius, F)
 [36.5, 37.00000000000001, 37.5, 39.0]
 ```
-
-> > #### filter:   The filter() function is also often used with the lambda function. It is used in conjunction with a function and an iterable object. It returns the items of the sequence for which function(item) is true.
+> >  
+- Filter:   The filter() function is also often used with the lambda function. It is used in conjunction with a function and an iterable object. It returns the items of the sequence for which function(item) is true.
 
 ```
 ## filter(func, seq)
