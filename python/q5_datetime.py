@@ -35,7 +35,6 @@ DStop2 - DStart2
 # datetime.timedelta(513)
 
 
-
 ####c)  
 date_start3 = '15-Jan-1994'  
 date_stop3 = '14-Jul-2015'  
@@ -44,3 +43,5 @@ DStart3 = dt.strptime(date_start3, '%d-%b-%Y')
 DStop3 = dt.strptime(date_stop3, '%d-%b-%Y')
 DStop3 - DStart3
 # datetime.timedelta(7850)
+
+
