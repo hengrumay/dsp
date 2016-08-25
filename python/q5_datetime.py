@@ -1,4 +1,4 @@
-# Hint:  use Google to find python function
+# h-rm_tan 24Aug2016
 
 ''' 
 Q5. Datetime
