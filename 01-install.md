@@ -44,6 +44,8 @@ cross-platform.
 
 ###Q1. Python Version 2 or 3
 
+**Course material for the bootcamp is currently based on Python version 2.7. Students have the option of using either version 2 or 3 during the bootcamp, but should be aware of some differences in code between the two versions.**  
+
 Did you install Python 2 or 3? Why?  
 
 >> 3 -- I did have Python 2 previously but some things don't appear to work so well, so I reinstalled to 3.

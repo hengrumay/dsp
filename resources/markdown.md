@@ -1,11 +1,18 @@
 ##[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)  
 
+###[What Is Markdown? 4 Reasons Why You Should Learn It Now](http://www.makeuseof.com/tag/markdown-4-reasons-learn-now/)  
+Markdown is a simple way to add formatting — like headers, bold/italic text, and lists — to plain text. Rather than relying on HTML or WYSIWYG editors, Markdown allows you to create full pages of formatted text without ever having to remove your fingers from the keyboard, and all in a way that’s much more intuitive than HTML.  
+
+---
+
 **Important:**  Look at your rendered markdown file before submitting!  :boom:  
 
+---
+
 #### Table of Contents
-[1)  Text Formatting](#section-a)  
-[2)  Referencing Other Markdown Files](#section-b)  
-[3)  Line Breaks](#section-c)  
+[1)  Line Breaks](#section-a)  
+[2)  Text Formatting](#section-b)  
+[3)  Referencing Other Markdown Files](#section-c)  
 [4)  Horizontal Rules](#section-d)  
 [5)  Emoji's](#section-e)  
 [6)  Links](#section-f)  
@@ -16,7 +23,15 @@
 
 ---
 
-## <a name="section-a"></a>1) Text Formatting  
+## <a name="section-a"></a>1) Line Breaks 
+
+**How to add line breaks:**  
+**1.  add two spaces to end of line**   
+2.  can enclose text in triple back quotes 
+
+---
+
+## <a name="section-b"></a>2) Text Formatting  
 
 bold: `**bold**`  **bold**  
 italic:  `*italic*` *italic*  
@@ -24,17 +39,9 @@ italic:  `_italic_` _italic_
 
 ---
 
-## <a name="section-b"></a>2) Referencing Other Markdown Files 
+## <a name="section-c"></a>3) Referencing Other Markdown Files 
 
 In a markdown file on GitHub, to see how it was formatted, click on "raw" on upper right corner.
-
----
-
-## <a name="section-c"></a>3) Line Breaks 
-
-How to add line breaks:  
-1.  can enclose text in triple back quotes  
-2.  add two spaces to end of line 
 
 ---
 
