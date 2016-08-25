@@ -41,6 +41,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 ```
 ### --- Examples of List(s) ---
+
 >>> stack = ['a', 'b', 'c']
 
 >>> stack.append(['d', 'e', 'f'])
