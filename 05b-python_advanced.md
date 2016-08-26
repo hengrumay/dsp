@@ -39,6 +39,7 @@ dtype: int64
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
 > > There are 3 different titles and their corresponding frequencies are:   
+
 ```
 >>> Ft_tidy.groupby(['title']).size()
 title
