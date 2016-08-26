@@ -19,7 +19,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> There are 8 different degrees and their corresponding frequencies are shown as follows:  
+>> There are 8 different degrees and their corresponding frequencies are as follows:  
 ```  
 >>> merged.groupby(['Fdeg']).size()
 Fdeg
@@ -32,12 +32,22 @@ MS       2
 PhD     32
 ScD      6
 dtype: int64
+
 ```
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+> > There are 3 different titles and their corresponding frequencies are:   
+```
+>>> Ft_tidy.groupby(['title']).size()
+title
+Assistant Professor of Biostatistics    12
+Associate Professor of Biostatistics    12
+Professor of Biostatistics              13
+dtype: int64
+
+```
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
