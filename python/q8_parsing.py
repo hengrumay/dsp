@@ -1,6 +1,6 @@
 # h-rm_tan 25Aug2016
 
-filepath = '/Users/hrm/Documents/Dropbox/DSrelated/GIThub/dsp/python/'
+filepath = '~/dsp/python/'
 
 import os
 if os.getcwd() == filepath:
