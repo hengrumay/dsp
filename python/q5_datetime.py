@@ -6,6 +6,7 @@ Q5. Datetime
 Use Python to compute days between start and stop date.
 
 ## Ref 
+## http://www.idiotinside.com/2015/03/14/working-with-date-and-time-python-892/
 ## https://pymotw.com/2/datetime/
 ## http://www.tutorialspoint.com/python/time_strptime.htm
 ## https://blogs.harvard.edu/rprasad/2011/09/21/python-string-to-a-datetime-object/
