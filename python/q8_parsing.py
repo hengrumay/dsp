@@ -50,7 +50,8 @@ ref http://stackoverflow.com/questions/15006298/how-to-preview-a-part-of-a-large
 '''
 
 # colN = list(fball.columns)
-# abs(fball[['Goals','Goals Allowed']].diff(-1,1)).idxmin(skipna=True)
+# rowID_minDiff = abs(fball[['Goals','Goals Allowed']].diff(-1,1)).idxmin(skipna=True)
+# fball['Team'].iloc[rowID_minDiff]
 
 absDiff = abs(fball['Goals']-fball['Goals Allowed'])
 #minDiff_info = fball.iloc[absDiff.idxmin()]
