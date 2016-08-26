@@ -26,7 +26,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 '''
 
-filepath = '/Users/hrm/Documents/Dropbox/DSrelated/GIThub/dsp/python/'
+filepath = '~/dsp/python/'
 
 import os
 if os.getcwd() == filepath:
