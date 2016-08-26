@@ -27,7 +27,7 @@ bryanma@upenn.edu
 '''
 
 
-filepath = '/Users/hrm/Documents/Dropbox/DSrelated/GIThub/dsp/python/'
+filepath = '~/dsp/python/'
 
 import os
 if os.getcwd() == filepath:
