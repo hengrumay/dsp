@@ -25,7 +25,7 @@ Place your code in this file: [advanced_python_dict.py](python/advanced_python_d
 '''
 
 
-filepath = '/Users/hrm/Documents/Dropbox/DSrelated/GIThub/dsp/python/'
+filepath = '~/dsp/python/'
 
 import os
 if os.getcwd() == filepath:
