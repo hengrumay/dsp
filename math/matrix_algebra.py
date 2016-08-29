@@ -76,7 +76,7 @@ alpha*u =
 alpha*u
 #array([[ 36,  12, -18,  30]])
 
-#2.4) u.v = u1v1 + u2v2 + u3v3
+#2.4) u.v = u1v1 + u2v2 + u3v3 == np.sum(u*v)
 ## np.dot(a,b) works for vectors only if they are 1dim
 np.dot(u.reshape(u.size,),v.reshape(v.size,))
 #51
