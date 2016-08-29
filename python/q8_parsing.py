@@ -8,16 +8,18 @@ if os.getcwd() == filepath:
 else:
     os.chdir(filepath)
     filepath = ''
-    
-    
 
-'''
-# The football.csv file contains the results from the English Premier League. 
-# The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of 
-# goals scored for and against each team in that season (so Arsenal scored 79 goals 
-# against opponents, and had 36 goals scored against them). Write a program to read the file, 
-# then print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
-''' 
+#==============================================================================
+#
+# '''
+# # The football.csv file contains the results from the English Premier League.
+# # The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of
+# # goals scored for and against each team in that season (so Arsenal scored 79 goals
+# # against opponents, and had 36 goals scored against them). Write a program to read the file,
+# # then print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
+# '''
+#==============================================================================
+
 
 #==============================================================================
 # PANDAS opt
@@ -25,7 +27,7 @@ else:
 
 import pandas as pd
 
-fball = pd.read_csv(filepath + 'football.csv') 
+fball = pd.read_csv(filepath + 'football.csv')
 
 '''
 >>> fball.head(10)
@@ -61,7 +63,7 @@ print( 'Team with least for vs. against goal difference is : {}' .format(minDiff
 
 
 #==============================================================================
-# non-PANDAS opt 
+# non-PANDAS opt
 
 #** http://stackoverflow.com/questions/7657457/finding-key-from-value-in-python-dictionary
 #==============================================================================
@@ -70,8 +72,8 @@ import csv
 
 with open(filepath + 'football.csv', "r") as f:
     fbD = csv.DictReader(f)
-    
-    absDiffD = {} #as dictionary   
+
+    absDiffD = {} #as dictionary
     for row in fbD:
         absDiffD[row['Team']] = abs(int(row['Goals']) - int(row['Goals Allowed']))
 
@@ -94,7 +96,7 @@ print ('Team with least for vs. against goal difference is : {}'  .format(minDif
 import csv, pandas as pd
 
 with open(filepath + 'football.csv', "r") as f:
-    #    reader=csv.reader(f,delimiter=',')    
+    #    reader=csv.reader(f,delimiter=',')
     reader = csv.reader(f)
     headers = next(reader)
     column = {h:[] for h in headers}
@@ -103,12 +105,12 @@ with open(filepath + 'football.csv', "r") as f:
         #   data.append(row) ## this creates a list of lists...
         for c, r in zip(headers, row):
             column[c].append(r)
-   
+
 
 T = column['Team']
 G = list(map(int, column['Goals']))
 GA = list(map(int, column['Goals Allowed']))
-diff = abs(pd.DataFrame(G)-pd.DataFrame(GA))    
+diff = abs(pd.DataFrame(G)-pd.DataFrame(GA))
 
 print( 'Team with least for vs. against goal difference is : {}' .format(T[diff.idxmin()[0]]) )
- 
+

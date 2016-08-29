@@ -1,6 +1,8 @@
 # h-rm_tan 26/28Aug2016
 
-## REFs
+#==============================================================================
+# ## REFs
+#==============================================================================
 # http://www.mysamplecode.com/2013/05/python-read-csv-file-list-dictionary.html
 # http://stackoverflow.com/questions/14091387/creating-a-dictionary-from-a-csv-file
 # http://stackoverflow.com/questions/18695605/python-pandas-dataframe-to-dictionary
@@ -14,16 +16,18 @@
 # http://pythoncentral.io/how-to-sort-python-dictionaries-by-key-or-value/
 # http://www.python-course.eu/dictionaries.php
 
-'''
----
-
-### Part III - Dictionary
-
-
-Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
-
----
-'''
+#==============================================================================
+# '''
+# ---
+#
+# ### Part III - Dictionary
+#
+#
+# Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
+#
+# ---
+# '''
+#==============================================================================
 
 
 filepath = '~/dsp/python/'
@@ -45,7 +49,9 @@ faculty = pd.read_csv(filepath + 'faculty.csv')
 #faculty.columns
 #>>> Index(['name', ' degree', ' title', ' email'], dtype='object')
 
-## TIDY pd DF:
+#==============================================================================
+# ## TIDY pd DF:
+#==============================================================================
 
 #Fn_tmp = faculty['name']
 #Fname = pd.DataFrame([s.split(' ')[-1] for s in faculty['name']], columns = ['first','middle','last']) #[0]1st & [2]last names

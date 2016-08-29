@@ -1,6 +1,8 @@
 # h-rm_tan 25Aug2016
 
-## REFs
+#==============================================================================
+# ## REFs
+#==============================================================================
 # https://www.shortcutfoo.com/app/dojos/python-regex/cheatsheet
 # http://www.tutorialspoint.com/python/python_reg_expressions.htm
 # https://docs.python.org/3/howto/regex.html
@@ -13,18 +15,19 @@
 # http://stackoverflow.com/questions/952914/making-a-flat-list-out-of-list-of-lists-in-python
 ## https://www.reddit.com/r/Python/comments/3tipqq/is_there_a_pandasonly_way_to_do_this_count_unique/
 
-'''
----
-
-The data file represents the [Biostats Faculty List at University of Pennsylvania](http://www.med.upenn.edu/cceb/biostat/faculty.shtml)
-
-This data is available in this file:  [faculty.csv](python/faculty.csv)
-
----
-###Part I - Regular Expressions
----
-
-'''
+#==============================================================================
+# '''
+# ---
+#
+# The data file represents the [Biostats Faculty List at University of Pennsylvania](http://www.med.upenn.edu/cceb/biostat/faculty.shtml)
+#
+# This data is available in this file:  [faculty.csv](python/faculty.csv)
+#
+# ---
+# ###Part I - Regular Expressions
+# ---
+# '''
+#==============================================================================
 
 filepath = '~/dsp/python/'
 
@@ -40,7 +43,9 @@ else:
 ## PLACE YOUR CODE HERE
 
 
-### LOAD Libraries & DATA
+#==============================================================================
+# ### LOAD Libraries & DATA
+#==============================================================================
 
 import pandas as pd
 import itertools

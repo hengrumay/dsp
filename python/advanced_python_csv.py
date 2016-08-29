@@ -1,30 +1,34 @@
 # h-rm_tan 26Aug2016
 
-## REFs
+#==============================================================================
+# ## REFs
+#==============================================================================
 # https://pythonprogramming.net/python-pandas-data-analysis/
 # http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html
 # http://chrisalbon.com/python/pandas_saving_dataframe_as_csv.html
 
 
-'''
----
-
-###Part II - Write to CSV File
-
-
-####Q5.  Write email addresses from Part I to csv file
-
-Place your code in this file: [advanced_python_csv.py](python/advanced_python_csv.py)
-
-The emails.csv file you create should be added and committed to your forked repository.
-
-Your file, emails.csv, will look like this:
-```
-bellamys@mail.med.upenn.edu
-warren@upenn.edu
-bryanma@upenn.edu
-```
-'''
+#==============================================================================
+# '''
+# ---
+#
+# ###Part II - Write to CSV File
+#
+#
+# ####Q5.  Write email addresses from Part I to csv file
+#
+# Place your code in this file: [advanced_python_csv.py](python/advanced_python_csv.py)
+#
+# The emails.csv file you create should be added and committed to your forked repository.
+#
+# Your file, emails.csv, will look like this:
+# ```
+# bellamys@mail.med.upenn.edu
+# warren@upenn.edu
+# bryanma@upenn.edu
+# ```
+# '''
+#==============================================================================
 
 
 filepath = '~/dsp/python/'
@@ -41,7 +45,9 @@ else:
 ## PLACE YOUR CODE HERE
 
 
-### LOAD Libraries & DATA
+#==============================================================================
+# ### LOAD Libraries & DATA
+#==============================================================================
 
 import pandas as pd
 
@@ -54,7 +60,9 @@ F_email.to_csv('Faculty_email.csv', index=False)
 
 
 
-### Alternatively using csv
+#==============================================================================
+# ### Alternatively using csv
+#==============================================================================
 
 import csv
 
