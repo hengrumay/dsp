@@ -5,9 +5,7 @@
 #==============================================================================
 # http://stackoverflow.com/questions/3127404/how-to-represent-matrices-in-python
 # https://www.ibm.com/developerworks/community/blogs/jfp/entry/Elementary_Matrix_Operations_In_Python?lang=en
-
 # https://www.ibm.com/developerworks/community/blogs/jfp/entry/Elementary_Matrix_Operations_In_Python?lang=en
-
 # http://www.python-course.eu/matrix_arithmetic.php
 
 
