@@ -2,6 +2,7 @@
 
 ## REFs
 # http://www.mysamplecode.com/2013/05/python-read-csv-file-list-dictionary.html
+# http://stackoverflow.com/questions/14091387/creating-a-dictionary-from-a-csv-file
 # http://stackoverflow.com/questions/18695605/python-pandas-dataframe-to-dictionary
 
 ### http://stackoverflow.com/questions/26716616/convert-pandas-dataframe-to-dictionary
