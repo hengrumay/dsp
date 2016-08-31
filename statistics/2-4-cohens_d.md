@@ -13,7 +13,6 @@ The pregnancy length of first borns (mean = `38.61` lbs) do not differ much from
 --
 ```{python}
 
-```{python}
 
 #==============================================================================
 # ## LOAD FILEs
