@@ -8,7 +8,7 @@
 > >
 First borns (mean weight = `7.20` lbs) generally weigh less than non-first borns (mean weight = `7.33` lbs). The effect size of this difference is `-0.089` standard deviations, which is small (Cohen's d: `d <= 0.2` small; `0.2< d <=0.5`: moderate; `d => 0.8`: large). Nonetheless, t-test of mean difference yielded significant differences (`t=-4.212, p=2.5506e-05, df=9036`).
 > >
-The pregnancy length of first borns (mean = `38.61` lbs) do not differ much from that of non-first borns (mean = `38.53` lbs). The effect size of this difference is `0.028` standard deviations, which is  small ((Cohen's d: `d <= 0.2` small; `0.2< d <=0.5`: moderate; `d => 0.8`: large). Additionally, t-test of mean difference yielded no significant difference (`t=1.328, p=0.184238, df=9036`).
+The pregnancy length of first borns (mean = `38.61` lbs) do not differ much from that of non-first borns (mean = `38.53` lbs). The effect size of this difference is `0.028` standard deviations, which is  small (Cohen's d: `d <= 0.2` small; `0.2< d <=0.5`: moderate; `d => 0.8`: large). Additionally, t-test of mean difference yielded no significant difference (`t=1.328, p=0.184238, df=9036`).
 
 --
 ```{python}
