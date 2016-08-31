@@ -13,27 +13,43 @@ The pregnancy length of first borns (mean = `38.61` lbs) do not differ much from
 --
 ```{python}
 
-## LOAD FILEs
+```{python}
+
+#==============================================================================
+# ## LOAD FILEs
+#==============================================================================
 import nsfg
 df = nsfg.ReadFemPreg()
 
-## TIDY DF
+#==============================================================================
+# ## TIDY DF
+#==============================================================================
 DFtmp = df[['caseid','outcome','birthord','prglngth', 'totalwgt_lb']]
 
-## Exclude those where brithord == NaN --> likely early pregnancy termination...
+#==============================================================================
+# ## Exclude those where brithord == NaN --> likely early pregnancy termination...
+#==============================================================================
 DF = DFtmp.dropna()
+
+#==============================================================================
+# ## Retrieve Relevant variables
+#==============================================================================
 livebirths = DF[DF.outcome == 1]
 firstBorn = livebirths[livebirths.birthord == 1]
 NOTfirstBorn = livebirths[livebirths.birthord != 1]
 
-## Summary Stats
+#==============================================================================
+# ## Summary Stats
+#==============================================================================
 firstBWt_mstd = [firstBorn['totalwgt_lb'].mean(), firstBorn['totalwgt_lb'].std()]
 NOTfirstBWt_mstd = [NOTfirstBorn['totalwgt_lb'].mean(), NOTfirstBorn['totalwgt_lb'].std()]
 
 firstBprgL_mstd = [firstBorn['prglngth'].mean(), firstBorn['prglngth'].std()]
 NOTfirstBprgL_mstd = [NOTfirstBorn['prglngth'].mean(), NOTfirstBorn['prglngth'].std()]
 
-## Define Cohen's D
+#==============================================================================
+# ## Define Cohen's D
+#==============================================================================
 import math
 
 def CohenEffectSize(group1, group2):
@@ -47,12 +63,16 @@ def CohenEffectSize(group1, group2):
     d = diff / math.sqrt(pooled_var)
     return d
 
-## Assess Size Effects for Differences
+#==============================================================================
+# ## Assess Size Effects for Differences
+#==============================================================================
 cD_weight = CohenEffectSize(firstBorn['totalwgt_lb'], NOTfirstBorn['totalwgt_lb'])
 cD_prgL = CohenEffectSize(firstBorn['prglngth'], NOTfirstBorn['prglngth'])
 
 
-## ttest -- assessment:
+#==============================================================================
+# ## ttest -- assessment:
+#==============================================================================
 import statsmodels.api as sm
 
 tt_wtDiff = sm.stats.ttest_ind(firstBorn['totalwgt_lb'], NOTfirstBorn['totalwgt_lb'], alternative='two-sided', usevar='pooled')
@@ -61,11 +81,14 @@ tt_wtDiff = sm.stats.ttest_ind(firstBorn['totalwgt_lb'], NOTfirstBorn['totalwgt_
 tt_prgLDiff = sm.stats.ttest_ind(firstBorn['prglngth'], NOTfirstBorn['prglngth'], alternative='two-sided', usevar='pooled')
 #tstat | pval | df : # (1.3279213634203044, 0.18423762856820036, 9036.0)
 
-# RESPONSE
+
+#==============================================================================
+# # RESPONSE
+#==============================================================================
 print ('First borns (mean weight = {0:.2f} lbs) generally weigh less than non-first borns (mean weight = {1:.2f} lbs). The effect size of this difference is {2:.3f} standard deviations, which is small (Cohen\'s d: d <= 0.2 small; 0.2< d <=0.5: moderate; d => 0.8: large). Nonetheless, t-test of mean difference yielded significant differences (t={3:.3f}, p={4:g}, df={5:.0f}).' .format(firstBWt_mstd[0], NOTfirstBWt_mstd[0], cD_weight, tt_wtDiff[0], tt_wtDiff[1], tt_wtDiff[2]) )
 
 
-print ('The pregnancy length of first borns (mean = {0:.2f} lbs) do not differ much from that of non-first borns (mean = {1:.2f} lbs). The effect size of this difference is {2:.3f} standard deviations, which is  small (Cohen\'s d: d <= 0.2 small; 0.2< d <=0.5: moderate; d => 0.8: large). Additionally, t-test of mean difference yielded no significant difference (t={3:.3f}, p={4:g}, df={5:.0f}).' .format(firstBprgL_mstd[0], NOTfirstBprgL_mstd[0], cD_prgL, tt_prgLDiff[0], tt_prgLDiff[1], tt_prgLDiff[2]) )
+print ('The pregnancy length of first borns (mean = {0:.2f} lbs) do not differ much from that of non-first borns (mean = {1:.2f} lbs). The effect size of this difference is {2:.3f} standard deviations, which is  small (Cohen\'s d: d <= 0.2 small; 0.2< d <=0.5: moderate; d => 0.8: large). Additionally, t-test of mean difference yielded no significant difference (t={3:.3f}, p={4:g}, df={5:.0f}).' .format(firstBprgL_mstd[0], NOTfirstBprgL_mstd[0], cD_prgL, tt_prgLDiff[0], tt_prgLDiff[1], tt_prgLDiff[2]) )  
 
 
 ```
