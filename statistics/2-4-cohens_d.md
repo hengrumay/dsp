@@ -1,5 +1,6 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+<<<<<<< Updated upstream
 > > [Variables Ref] (http://greenteapress.com/thinkstats2/html/thinkstats2002.html)  
 [Effect Sizes from Wikipedia] (https://en.wikipedia.org/wiki/Effect_size_)  
 
@@ -91,3 +92,16 @@ print ('The pregnancy length of first borns (mean = {0:.2f} lbs) do not differ m
 
 
 ```
+=======
+>> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> # Task: Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others. 
+>> # Compute Cohen’s d to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
+
+
+  
+  
+```{python}
+print(format(1+2) )
+
+```
+>>>>>>> Stashed changes
