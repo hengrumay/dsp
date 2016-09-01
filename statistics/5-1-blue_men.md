@@ -83,6 +83,7 @@ np.array([mCumPct_lowEnd, mCumPct_highEnd, mDiff])*100
 > > About 34.3% men are within the 5'10" and 6'1" height range.
 
 ```{python}
+## Women
 wCumPct_lowEnd = Wdist.cdf(feetNinch_to_cm(5,10))   # 5'10" == 177.8cm
 wCumPct_highEnd = Wdist.cdf(feetNinch_to_cm(6,1))   # 6'1" == 185.4vm
 wDiff=wCumPct_highEnd- wCumPct_lowEnd
