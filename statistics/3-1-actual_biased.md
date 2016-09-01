@@ -1,7 +1,7 @@
 
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
->> Task: Something like the class size paradox appears if you survey children and ask how many children are in their family.   
+>> ####Task: Something like the class size paradox appears if you survey children and ask how many children are in their family. 
 Families with many children are more likely to appear in your sample, and families with no children have no chance to be in the sample.
 
 > > Use the NSFG respondent variable NUMKDHH to construct the actual distribution for the number of children under 18 in the household
@@ -74,10 +74,8 @@ print( 'Actual Mean Number of Children = {0:.3f}' . format(actual_pmf.Mean()) )
 print( 'Observed Mean Number of Children = {0:.3f}' . format(biased_pmf.Mean()) )
 #2.404
 
-
 ```
-
-<img src="../img/ch3ex1.png"/>
+<img src="https://github.com/hengrumay/dsp/blob/master/statistics/figs/ch3ex1.png?raw=true">  
 
 > > As expected the actual mean number of children is `1.024` and less than the observed mean number `2.404` if children themselves are surveyed, since you won't be getting representative information about household without children from non-existing children!
 
