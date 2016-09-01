@@ -58,8 +58,7 @@ np.shape(w)
 
 #==============================================================================
 # #2. Vector Operations
-# #Perform the following operations. Assume
-alpha = 6.
+# #Perform the following operations. Assume alpha = 6.
 #==============================================================================
 alpha = 6
 
@@ -72,7 +71,6 @@ u - v
 #array([[ 3, -3, -2,  1]])
 
 #2.3)
-alpha*u =
 alpha*u
 #array([[ 36,  12, -18,  30]])
 
