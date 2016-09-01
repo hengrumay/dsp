@@ -21,7 +21,7 @@ X = pd.DataFrame([random.random() for x in range(1000)], columns= ['randN'])
 
 ```
 
-> > The probability mass function (PMF), which maps from each value to its probability (i.e. normalizing each value's frequency the sample size n). However, with increasing sample size, the probability associated with each value gets smaller and the effect of random noise increases.
+> > The probability mass function (PMF) maps each value in a sample to its probability (i.e. by normalizing each value's frequency with the sample size n). However, with increasing sample size, the probability associated with each value gets smaller and the effect of random noise increases.
 
 
 ```{python}
@@ -43,7 +43,7 @@ plt.show()
 <img src="https://github.com/hengrumay/dsp/blob/master/statistics/figs/ch4ex2_pmf.png?raw=true">  
 
 
-> > The cumulative distribution function (CDF) is the function that maps from a value to its percentile rank.
+> > The cumulative distribution function (CDF) maps from a value to its percentile rank. CDFs are especially useful for comparing distributions.
 
 ```{python}
 #import thinkstats2
@@ -65,4 +65,4 @@ plt.show()
 <img src="https://github.com/hengrumay/dsp/blob/master/statistics/figs/ch4ex2_cdf.png?raw=true">  
 
 
-> >The CDF approximates a straight line, which means that the distribution is uniform.
+> >The CDF approximates a straight line, reflecting that the distribution of random number is uniform.
