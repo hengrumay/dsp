@@ -78,7 +78,7 @@ mDiff=mCumPct_highEnd- mCumPct_lowEnd
 
 np.array([mCumPct_lowEnd, mCumPct_highEnd, mDiff])*100
 #array([ 48.96390279,  83.23858655,  34.27468376])
-#(0.48963902786483265, 0.83173371081078573, 0.34209468294595308)
+
 ``` 
 > > About 34.3% men are within the 5'10" and 6'1" height range.
 
