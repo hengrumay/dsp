@@ -58,7 +58,7 @@ np.shape(w)
 
 #==============================================================================
 # #2. Vector Operations
-# #Perform the following operations. Assume 
+# #Perform the following operations. Assume
 alpha = 6.
 #==============================================================================
 alpha = 6
@@ -71,7 +71,7 @@ u + v
 u - v
 #array([[ 3, -3, -2,  1]])
 
-#2.3) 
+#2.3)
 alpha*u =
 alpha*u
 #array([[ 36,  12, -18,  30]])
@@ -96,12 +96,14 @@ np.linalg.norm(u)
 #ValueError: operands could not be broadcast together with shapes (2,3) (3,2)
 
 #3.2) A - C^T =
-A - C.transpose()
+#A - C.transpose()
+A-C.T
 #matrix([[-4, -7, -3],
 #        [ 3,  6,  4]])
 
 #3.3) C^T + 3*D =
-C.transpose() + 3*D
+#C.transpose() + 3*D
+C.T + 3*D
 #matrix([[14,  3,  3],
 #        [ 2,  7,  9]])
 
@@ -111,7 +113,8 @@ B*A
 #        [ 2,  7,  4]])
 
 #3.5) BA^T = NOT DEFINED
-B*A.transpose()
+#B*A.transpose()
+B*A.T
 #ValueError: shapes (2,2) and (3,2) not aligned: 2 (dim 1) != 3 (dim 0)
 
 
@@ -135,12 +138,14 @@ B*B*B*B
 #        [ 0,  1]])
 
 #3.9) AA^T =
-A*A.transpose()
+#A*A.transpose()
+A*A.T
 #matrix([[14, 28],
 #        [28, 69]])
 
 #3.10) D^TD =
-D.transpose()*D
+#D.transpose()*D
+D.T*D
 #matrix([[10, -4,  0],
 #        [-4,  8,  8],
 #        [ 0,  8, 10]])
