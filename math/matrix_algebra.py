@@ -97,7 +97,7 @@ np.linalg.norm(u)
 
 #3.2) A - C^T =
 #A - C.transpose()
-A-C.T
+A - C.T
 #matrix([[-4, -7, -3],
 #        [ 3,  6,  4]])
 
