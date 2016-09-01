@@ -32,7 +32,7 @@ reshama$ jupyter notebook
 ###Shut Down the Juypter Notebook App
 At terminal prompt:  
  * control + c
- * type:  y
+ * type:  `y`
  
 >my example 
 ```console

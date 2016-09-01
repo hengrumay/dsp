@@ -1,6 +1,17 @@
 ![Metis logo](img/metis.png)
 
-# Before Metis
+# [Metis](http://www.thisismetis.com/) Data Science Bootcamp Pre-work
+# Table of Contents
+
+[1. Pre-work Exercises](#section-a)  
+[2. Submitting Pre-work](#section-b)  
+[3. Mac vs Windows](#section-c)  
+[4. FAQs](#section-d)  
+
+
+---
+
+## <a name="section-a"></a>1.  Pre-work Exercises
 
 These materials are designed to ensure you are ready to succeed in the
 Metis data science bootcamp. Students should budget **60+ hours** to complete the pre-work.
@@ -8,6 +19,8 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
 **All exercises _must_ be completed before the first day of class.**
 
  Step 0. [Fork Repo](00-fork_repo.md)
+ 
+ Step 0.5 [Review Markdown formatting before beginning work](/resources/markdown.md) 
  
  Step 1. [Install software on your computer](01-install.md)
  
@@ -33,13 +46,13 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
 
 ---
 
-## Submitting Pre-work
+## <a name="section-b"></a>2.  Submitting Pre-work
 
 Make all changes to your forked repo; **this is considered your pre-work submission.**  (No need to submit pull requests to the thisismetis/dsp repo.)
 
 ---
 
-## Mac vs Windows
+## <a name="section-c"></a>3.  Mac vs Windows
 
 ###Case for Mac over Windows
 
@@ -63,7 +76,6 @@ Windows is discouraged, but some people are actually productive on Windows. Itâ€
 
 If you want to spend time learning how to configure things, I recommend learning how to configure Linux over learning how to configure Windows.
 
----
 
 ###Running Windows - Don't Do It
 
@@ -72,7 +84,6 @@ A: The short answer is this: **Don't run Windows.**
 
 The slightly longer answer is that it is possible to run Windows, but everything is harder. I've never had a student do the class with Windows. I had a student start the class with Windows, but by the second day that student went out and bought a new computer because it was too hard to keep up in Windows.
 
----
 
 ###If not Mac, if not Windows, then ---> Linux
 
@@ -85,7 +96,7 @@ You don't necessarily need to buy a new computer. Here are some alternatives:
 
 ---
 
-## FAQ
+## <a name="section-d"></a>4.  FAQs
 
 **Q:  Can I discuss prework with other students in the course?**  
 A:  Yes
