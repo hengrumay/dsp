@@ -91,4 +91,4 @@ wDiff=wCumPct_highEnd- wCumPct_lowEnd
 np.array([wCumPct_lowEnd, wCumPct_highEnd, wDiff])*100
 #array([ 97.8689099 ,  99.89341159,   2.02450169])
 ```
-> > For the height range requirment, only about 2 % of females will likely qualify. See also the [interview] ('http://www.atlasobscura.com/articles/the-ao-exit-interview-12-years-in-the-blue-man-group') that mentioned the rarity of female performers.
+> > For the height range requirment, only about 2 % of females will likely qualify. See also the [interview] (http://www.atlasobscura.com/articles/the-ao-exit-interview-12-years-in-the-blue-man-group) that mentioned the rarity of female performers.
