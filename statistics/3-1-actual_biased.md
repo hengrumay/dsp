@@ -21,7 +21,7 @@ actual_pmf = thinkstats2.Pmf(respdr.numkdhh, label='actual')
 
 ```{python}
 
->> Next compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.
+> > Next compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.
 
 ```{python}
 
@@ -48,10 +48,11 @@ def BiasPmf(pmf, label=''):
 #Make a the biased Pmf of children in the household, as observed if you surveyed the children instead of the respondents.
 biased_pmf = BiasPmf(actual_pmf, label='biased')
 
-
 ```
 
->> Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.
+
+> > Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.
+
 
 ```{python}
 import matplotlib.pyplot as plot
