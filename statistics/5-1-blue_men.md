@@ -56,7 +56,7 @@ Wdist.cdf(Wmu-Wsigma)
 #0.15865525393145663
 ```
 
-> > Determin how many people are between 5'10" and 6'1". First converting the imperial height measure to metric (more sensible!), and then using the CDF distribution to find the percentile rank(s). 
+> > Determine how many people are between 5'10" and 6'1". First converting the imperial height measure to metric (more sensible!), and then using the CDF distribution to find the percentile rank(s). 
 
 ```{python}
 
