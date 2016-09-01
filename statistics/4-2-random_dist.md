@@ -64,5 +64,5 @@ plt.show()
 
 <img src="https://github.com/hengrumay/dsp/blob/master/statistics/figs/ch4ex2_cdf.png?raw=true">  
 
-
 > >The CDF approximates a straight line, reflecting that the distribution of random number is uniform.
+
