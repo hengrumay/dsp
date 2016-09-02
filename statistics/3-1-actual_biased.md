@@ -110,7 +110,7 @@ mean_man = sum(numC*pmfnumC)
 
 
 #==============================================================================
-# ### Recreate biased Distributions from probmassfunction (pmf) for recreating plots without thinkstats functions -- because it is like a black box and not helpful
+# ### Recreate biased Distributions from probmassfunction (pmf) for recreating plots without thinkstats functions -- because it is like a black box 
 #==============================================================================
 
 import pandas as pd
