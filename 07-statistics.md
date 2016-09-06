@@ -73,7 +73,6 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >>  
 > > To solve for the conditional probability that Elvis was an identical twin given that his twin was a boy, we need to figure out the likelihood of twins (identical and fraternal) being both boys.    
 > >  We presume that in general the probability of a baby being born boy or girl is respectively 0.5 .     
-
 > >  Identical twins  are  both of the same sex . Therefore the conditional probability of a set of identical twins being  either boys or girls is 0.5.   
 > >  Expressing this in probability 'notation': 
 
