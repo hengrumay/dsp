@@ -70,7 +70,98 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>  
+> > To solve for the conditional probability that Elvis was an identical twin given that his twin was a boy, we need to figure out the likelihood of twins (identical and fraternal) being both boys.  
+
+- in general -- P_gender
+> >  We presume that in general the probability of a baby being born boy or girl is respectively 0.5 .     
+
+> >  Identical twins  are  both of the same sex . Therefore the conditional probability of a set of identical twins being  either boys or girls is 0.5.   
+> >  Expressing this in probability 'notation': 
+
+```{python}
+#==============================================================================
+# # IDENTICAL TWINS : itwins: bb OR gg
+#  P(bb_itwin) = 1/2       #P(b|id)
+#  P(gg_itwin) = 1/2      #P(~b|id)
+#==============================================================================
+'''#P(b|id)'''
+Pbb_itwin = 0.5
+'''#P(~b|id)'''
+Pxbb_itwin = 0.5
+```
+
+> > As for fraternal twins, gender combinations can manifest where both fraternal twins are boys, or both are girls, or the first born twin is a boy and his twin a girl, or vice versa.    
+> > Therefore, the oonditional probability of  fraternal twins being both boys is 0.25. This is expressed in probability 'notation' below:
+
+```{python}
+#==============================================================================
+# # FRATERNAL TWINS: ftwins : b-b OR b-g OR g-b OR g-g
+# P(bb_ftwin) | P(gg_ftwin) | P(bg_ftwin) | P(gb_ftwin) == 1/4
+# P(b|~id)     #================ #P(~b|~id) ==================#
+#==============================================================================
+'''#P(b|~id)'''
+Pbb_ftwin = 1/4
+'''#P(~b|~id)'''
+Pxbb_ftwin = 3/4
+```
+
+> >  We were provided with the observation  the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.   
+> > This is expressed in probability 'notation' as follows:   
+```{python}
+#==============================================================================
+# # P(itwin)
+'''# p(id)'''
+Pitwin= 1/300       # p(id)
+#
+# # P(ftwin)
+'''# P(~id)'''
+Pftwin = 1/125      # P(~id)
+#==============================================================================
+```
+
+> >  The law of conditional probability allows us to infer the likelihood of events :   
+```{python}
+#==============================================================================
+# ## Law of Prob
+# P(B) = [P(A)*P(B|A)] + [P(~A) * P(B|~A)]
+#==============================================================================
+```
+
+> >  We can infer the probability of twins being both boys as follows:   
+```{python}
+#==============================================================================
+# # P(twin_bb)
+# P(itwin & twin_brother) = 1/300 * 1/2   # P(id n b)
+# P(ftwin & twin_brother) = 1/125 * 1/4   # P(~id n b)
+#==============================================================================
+'''#P(b) == P(b|id) * P(id) + P(b|~id) * P(~id)'''
+Pbb = Pbb_itwin * Pitwin + Pbb_ftwin * Pftwin
+#Pbb = (1/2 * 1/300) + (1/4 * 1/125) == 0.003666666666666667 == 11/3000
+```
+
+> > Finally, Bayes Theorem  helps with deriving the conditional probability of interest:   
+```{python}
+#==============================================================================
+# ## Bayes Theorem
+# P(A|B) =  P(A)*P(B|A) / ( [P(A)*P(B|A)] + [P(~A) * P(B|~A)] )
+#==============================================================================
+```
+
+> >  By dividing the probability of identical twins being both boys  by the probability of twins who are boys, we  arrive at the conditional probability of  a set of twins being identical given that the twins are boys :   
+```{python}
+#==============================================================================
+# # P(itwin | b)
+#==============================================================================
+'''#P(id|b) = P(b|id) * P(id) / P(b)'''
+Pitwin_bb = (Pbb_itwin * Pitwin) / Pbb
+#Pitwin_bb = (1/2 * 1/300 ) / (11/3000) == 0.45454545454545453 == 5/11
+```
+
+> >  Therefore the probability that Elvis was an identical twin is 5/11 .
+> >  Actually this was [a question posted by Andrew Gelman in 2005].('http://andrewgelman.com/2005/01/03/what_is_the_pro/').
+
+
 
 ---
 
