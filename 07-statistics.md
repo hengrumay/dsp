@@ -75,7 +75,6 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 > >  We presume that in general the probability of a baby being born boy or girl is respectively 0.5.
 > >  Identical twins  are  both of the same sex . Therefore the conditional probability of a set of identical twins being  either boys or girls is 0.5.   
 > >  Expressing this in probability 'notation': 
-
 ```{python}
 #==============================================================================
 # # IDENTICAL TWINS : itwins: bb OR gg
@@ -90,7 +89,6 @@ Pxbb_itwin = 0.5
 
 > > As for fraternal twins, gender combinations can manifest where both fraternal twins are boys, or both are girls, or the first born twin is a boy and his twin a girl, or vice versa.    
 > > Therefore, the oonditional probability of  fraternal twins being both boys is 0.25. This is expressed in probability 'notation' below:
-
 ```{python}
 #==============================================================================
 # # FRATERNAL TWINS: ftwins : b-b OR b-g OR g-b OR g-g
