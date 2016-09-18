@@ -163,7 +163,16 @@ Pitwin_bb = (Pbb_itwin * Pitwin) / Pbb
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> > A fundamental difference between frequentist and Bayesian statistics lies in their respective definition of probability. (ref http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/)   
+> > From a frequentist perspective, probabilities are fundamentally related to frequencies of events, and where each probability is a fixed value; there is no distribution of possible values for this probable observation.
+There is a tendency  in frequentist statistics to assume that observations are derived from 'controlled' conditions and therefore, there is an interest in repeatability. 
+
+> > From a Bayesian perspective, probabilities are fundamentally related to our own knowledge about an event, and that this probability is a random variable with its own distribution of possible values.  
+It follows that we can sensibly probe the probability that the true probability of an event/observation lies in a given range. That probability represents our knowledge of the value based on prior information and/or available data.
+Prior information is crucial to Bayesian statistics , and informs the inference(s).  It further acknowledges that every statistical model is derived subjectively.  
+
+> > Both are useful in their own ways depending on the question(s) asked. In solving many complex statistical problems, a mixture of both approaches are combined to yield confidence in inferences.   
+> > (see http://simplystatistics.org/2014/10/13/as-an-applied-statistician-i-find-the-frequentists-versus-bayesians-debate-completely-inconsequential/)
 
 ---
 
